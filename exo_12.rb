@@ -18,12 +18,6 @@ puts "Il y a #{user_birth_year} ans, tu avais #{age_counter} an."
 
 repeater -= 1
 
-# repeater.times do
-#   user_birth_year -= 1
-#   age_counter += 1
-#   puts "Il y a #{user_birth_year} ans, tu avais #{age_counter} ans."
-# end
-
 repeater.times do
   if user_birth_year != age_counter
     puts "Il y a #{user_birth_year} ans, tu avais #{age_counter} ans."
