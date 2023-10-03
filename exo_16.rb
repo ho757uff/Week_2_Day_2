@@ -4,19 +4,21 @@ puts "Bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?!"
 print "> "
 number_of_stages = gets.chomp.to_i
 
-tags = "#"
-spaces = " "
 
-number_of_tags = 1
-number_of_spaces = 0
+spaces = " "
+tags = "#"
+
+spaces_count = number_of_stages
+tags_count = 1
 
 # ---
 
-
+# puts spaces_count
 puts "Voici la pyramide :"
 
-number_of_stages.times do
-  puts tags
-  tags = tags + "#"
+number_of_stages.times do |index|
+  print spaces * spaces_count
+  puts tags * tags_count
+  spaces_count -= 1
+  tags_count += 1
 end
-# puts "#{number_of_tags} * tags" 
