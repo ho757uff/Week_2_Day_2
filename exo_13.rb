@@ -7,7 +7,7 @@
 number_of_emails = 50
 
 number_of_emails.times do |i|
-  a = Array.new(number_of_emails, "jean.dupont.#{i}@email.fr")
+  a = Array.new(1, "jean.dupont.#{i+1}@email.fr")
 puts a
 end
 
