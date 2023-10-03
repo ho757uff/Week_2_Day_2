@@ -13,7 +13,6 @@ tags_count = 1
 
 # ---
 
-# puts spaces_count
 puts "Voici la pyramide :"
 
 number_of_stages.times do |index|
