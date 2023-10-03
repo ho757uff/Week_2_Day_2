@@ -1,5 +1,5 @@
 puts "Salut BG ! :}"
-puts "T'es né en quelle année?!"
+puts "T'es né(e) en quelle année?!"
 
 print "> "
 user_birth_year = gets.chomp.to_i

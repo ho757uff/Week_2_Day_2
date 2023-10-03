@@ -34,4 +34,4 @@ user_birth_year -= 1
 age_counter += 1
 
 puts "Il y a #{user_birth_year} an, tu avais #{age_counter} ans."
-puts "Cette année est celle de tes #{age_counter + 1} ans."
+puts "Cette année est celle de tes #{age_counter+1} ans."

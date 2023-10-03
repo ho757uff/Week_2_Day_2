@@ -9,6 +9,7 @@
 
 
 # ----------------------Working----------------------
+
 number_of_emails = 50
 emails = []
 
@@ -17,4 +18,4 @@ number_of_emails.times do |i|
   emails << email
 end
 
-print emails
+puts emails
