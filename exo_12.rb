@@ -1,36 +1,43 @@
 puts "Salut BG ! :}"
-puts "T'es né en quelle année?!"
+puts "T'as quel âge?!"
 
 print "> "
 user_birth_year = gets.chomp.to_i
 
 actual_year = 2023
 age_counter = 1
-years_difference = actual_year - user_birth_year
-repeater = years_difference - 2
 
-puts "Il y a #{years_difference} ans, tu venais de naître!"
-years_difference -= 1
-puts "Il y a #{years_difference} ans, tu avais #{age_counter} an."
+# user_birth_year = actual_year - user_birth_year
+repeater = user_birth_year - 2
 
-years_difference -= 1
-age_counter += 1
+# puts user_birth_year
+
+puts "Il y a #{user_birth_year} ans, tu venais de naître!"
+user_birth_year -= 1
+puts "Il y a #{user_birth_year} ans, tu avais #{age_counter} an."
+
 repeater -= 1
 
+# repeater.times do
+#   user_birth_year -= 1
+#   age_counter += 1
+#   puts "Il y a #{user_birth_year} ans, tu avais #{age_counter} ans."
+# end
+
 repeater.times do
-  if years_difference != age_counter
-    puts "Il y a #{years_difference} ans, tu avais #{age_counter} ans."
-    years_difference -= 1
+  if user_birth_year != age_counter
+    puts "Il y a #{user_birth_year} ans, tu avais #{age_counter} ans."
+    user_birth_year -= 1
     age_counter += 1
   else
-    puts "Il y a #{years_difference} ans, tu avais la moitié de l'âge que tu as aujourd'hui."
-    years_difference -= 1
+    puts "Il y a #{user_birth_year} ans, tu avais la moitié de l'âge que tu as aujourd'hui."
+    user_birth_year -= 1
     age_counter += 1
   end
 end
 
-# years_difference -= 1
-# age_counter += 1
+user_birth_year -= 1
+age_counter += 1
 
-puts "Il y a #{years_difference} an, tu avais #{age_counter} ans."
-puts "Cette année est donc celle de tes #{age_counter + 1} ans."
+puts "Il y a #{user_birth_year} an, tu avais #{age_counter} ans."
+puts "Cette année est celle de tes #{age_counter + 1} ans."
