@@ -17,7 +17,6 @@ repeater -= 1
 
 repeater.times do
   years_difference -= 1
-  user_birth_year += 1
   age_counter += 1
   puts "Il y a #{years_difference} ans, tu avais #{age_counter} ans."
 end
@@ -26,4 +25,4 @@ years_difference -= 1
 age_counter += 1
 
 puts "Il y a #{years_difference} an, tu avais #{age_counter} ans."
-puts "Aujourd'hui, tu as donc #{age_counter + 1} ans."
+puts "Cette année est donc celle de tes #{age_counter + 1} ans."
