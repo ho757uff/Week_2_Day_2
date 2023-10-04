@@ -19,3 +19,20 @@ number_of_emails.times do |i|
 end
 
 puts emails
+
+
+
+# # ----------------------Corrected Florian----------------------
+
+
+# number_of_emails = 50
+# emails = []
+
+# number_of_emails.times do |i|
+#   numero = sprintf('%02d', i+1)
+
+#   email = "jean.dupont.#{numero}@email.fr"
+#   emails << email
+# end
+
+# puts emails
